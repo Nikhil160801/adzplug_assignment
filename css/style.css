@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: rgba(0, 4, 38, 1);
+}
+
+#logo {
+    height: 50px;
+    margin: 10px;
+    margin-left: 5rem;
+}
+
+#togglers{
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 4, 38, 1);
+}
+
+nav .navli {
+    list-style: none;
+    display: inline-block;
+    font-size: 13px;
+    font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: rgb(152, 144, 144);
+}
+nav .navli:hover {
+    color: white;
+}
+
+#navul {
+    margin-right: 5rem;
+}
+
+/* MAIN */
+
+main #mainsection {
+    width: 100%;
+}
+
+#maintwb {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin: 0rem 0rem 2rem;
+    padding: 4rem;
+    padding-top: 0px;
+}
+
+#imgdiv {
+    display: inline-block;
+    position: relative;
+    top: -135px;
+}
+
+.custom-btn {
+    color: black; 
+    display: inline-block;
+    width:300px;
+    height:50px;
+    text-align:center;
+    line-height:1.1em;
+    font-size:1.1em;
+    border: 2px solid black;
+    margin: 0rem 1rem;
+}
+.customization{
+    display: flex;
+    width: 100%;
+
+}
+
+.intro-3rd {
+    line-height: 1.5;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+#aboutus {
+    padding: 5% 2% !important;
+    background: linear-gradient(to bottom, #ffffff, #dff1e9);
+}
+
+#auTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aur {
+    font-size: 70px;
+    color: #1adb80;
+    margin: 0;
+    font-family: "Nunito";
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.aurt {
+    padding: 0 0 0 2%;
+    color: rgba(0, 0, 0, 0.76);
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#auBottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.auExtraInfo {
+    width: 33.3%;
+    margin: 2rem;
+}
+
+.auExtraInfo>p:nth-of-type(1) {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.WimxMarquee {
+    background: linear-gradient(to bottom, #ffffff, #dff1e9);
+}
+
+.whyIinfluencerMarketing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brandCountCont {
+    font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+}
+
+.brandCountPara>span {
+    color: #1adb80;
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+}
+
+marquee img {
+    margin: 0px 20px;
+}
+
+
+
+.insideGreenDiv1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 30;
+
+}
+.insideGreenDiv1 i{
+    margin: 0.5rem;
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* footer */
+
+.footer-links-cont{
+    padding: 2rem;
+    background: linear-gradient(to bottom, #ffffff, #dff1e9);
+    
+}
+
+.footerDescCont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerFresskoutDescHolder, .moveUp, .footerLink{
+    width: 33.3%;
+    margin: 2rem;
+    color: #9ab;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Utilities */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito", "Helvetica", "Arial", "sans-serif";
+}
+
+h3 {
+    color: #1adb80;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 2rem 0rem;
+}
+
+h1 {
+    font-weight: 700;
+    color: #000;
+    text-align: left;
+    margin: 2% 0;
+    width: 90%;
+}
+
+/* Adjusting the screen size via Media queries */
+@media only screen and (max-width:800px) {}

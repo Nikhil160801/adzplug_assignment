@@ -1,0 +1,124 @@
+#mainsection{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 4, 38, 1);
+    overflow: hidden;
+}
+
+#bubbles {
+    position: relative;
+    display: flex;
+}
+
+#bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin: 0px 4px;
+    border-radius: 50%;
+    animation: staranimate 150s linear infinite;
+    animation-duration: calc(180s / var(--i));
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+.wave.wave1 {
+    animation: animate 20s linear infinite;
+    z-index: 1000;
+    opacity: 0.7;
+    animation-delay: 0;
+    bottom: 0;
+}
+
+.wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10;
+}
+
+.wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+.wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20;
+}
+
+
+/* footer side animation */
+#bubbles2 {
+    position: relative;
+    display: flex;
+}
+
+#bubbles2 span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: rgba(116, 94, 94, 0.534);
+    margin: 0px 4px;
+    border-radius: 50%;
+    animation: staranimate2 150s linear infinite;
+    animation-duration: calc(100s / var(--i));
+}
+
+
+/* Animations keyframes */
+
+@keyframes animate {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes staranimate {
+    0% {
+        transform: translateY(100vh) scale(0.1);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(0.2);
+    }
+}
+@keyframes staranimate2 {
+    0% {
+        transform: translateY(50vh) scale(0.1);
+    }
+
+    100% {
+        transform: translateY(0vh) scale(0.2);
+    }
+}
