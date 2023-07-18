@@ -93,6 +93,7 @@ main #mainsection {
 }
 
 #aboutus {
+    width: 100%;
     padding: 5% 2% !important;
     background: linear-gradient(to bottom, #ffffff, #dff1e9);
 }
@@ -123,7 +124,7 @@ main #mainsection {
 #auBottom {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    /* flex-direction: row; */
     margin: 2rem;
 }
 
